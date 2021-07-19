@@ -2004,7 +2004,7 @@ class VideoRoomHandle(FrontendHandleBase):
             if request == 'create' or request == 'edit' or request == 'destroy' or request == 'list' \
                     or request == 'exists' or request == 'allowed' or request == 'kick' \
                     or request == 'listparticipants' or request == 'listforwarders' or request == 'rtp_forward' \
-                    or request == 'stop_rtp_forward':
+                    or request == 'stop_rtp_forward' or request == 'enable_recording':
 
                 result = self._handle_sync_message(transaction, body, jsep)
 
